@@ -3,4 +3,4 @@
 
 Перед запуском нужно переименовать файл cypress.env.json.dist в cypress.env.json и указать свои данные в файле.
 
-cp cypress.env.json.dist cypress.env.json
+cp cypress.env.json.dist cypress.env.json команда для терминала
