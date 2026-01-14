@@ -7,11 +7,11 @@ import * as result_page from "../locators/result_page.json"
 describe('Проверка авторизации', function () {
     
     beforeEach('Начало теста', function () {
-         cy.visit('/');
-         cy.get(main_page.fogot_pass_btn).should('have.css', 'color', 'rgb(0, 85, 152)');
+        cy.visit('/');
+        cy.get(main_page.fogot_pass_btn).should('have.css', 'color', 'rgb(0, 85, 152)');
            });
     afterEach('Конец теста', function () {
-         cy.get(result_page.close).should('be.visible');
+        cy.get(result_page.close).should('be.visible');
         });
 
     it('Верный пароль и верный логин', function () {
@@ -65,3 +65,4 @@ describe('Проверка авторизации', function () {
         cy.get(result_page.title).should('be.visible'); // проверка что текст авторизации виден пользователю
     })
 })
+
