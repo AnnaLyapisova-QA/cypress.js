@@ -1,6 +1,3 @@
-// import * as data from "../helpers/default_data.json"
-
-
 describe('Покупка нового автара для своего тренера', function () {
 
    it('Покупка нового автара для своего тренера', function () {
@@ -27,5 +24,6 @@ describe('Покупка нового автара для своего трен�
     cy.get('.payment_status_top_title').contains('Покупка прошла успешно'); // проверка текста
     cy.get('.payment_status_top_title').should('be.visible');// проверка что текст виден пользователю
     })
+
 
 })
