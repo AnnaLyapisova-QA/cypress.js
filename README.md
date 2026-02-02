@@ -1,10 +1,3 @@
-# cypress.js
-Примеры автотестов на клиентскую часть на Cypress JavaScript
-
-Перед запуском нужно переименовать файл cypress.env.json.dist в cypress.env.json и указать свои данные в файле.
-
-cp cypress.env.json.dist cypress.env.json команда для терминала
-
 <h2>UI Автотесты на фреймворке Cypress</h2>
 
 > **Статус проекта:**
@@ -27,16 +20,16 @@ cp cypress.env.json.dist cypress.env.json команда для терминал
 ## Детали реализации
 
 1. baseUrl вынесен в переменные конфига
-![image]()
+![image](https://raw.githubusercontent.com/AnnaLyapisova-QA/cypress.js/refs/heads/main/base_url.png)
 
 2. Применение хуков beforeEach и afterEach
-![image]()
+![image](https://raw.githubusercontent.com/AnnaLyapisova-QA/cypress.js/refs/heads/main/befor_after.png)
 
 3. Переменные данные для авторизации вынесены в отдельный файл. Перед запуском нужно переименовать файл cypress.env.json.dist в cypress.env.json и указать свои данные в файле
-![image]()
+![image](https://raw.githubusercontent.com/AnnaLyapisova-QA/cypress.js/refs/heads/main/login_password.png)
 
 4. Каждая страница описана в формате объекта с локаторами
-![image]()
+![image](https://raw.githubusercontent.com/AnnaLyapisova-QA/cypress.js/refs/heads/main/locators.png)
 
 ## Локальный запуск тестов (из терминала)
 1. Скачать проект
@@ -45,18 +38,18 @@ cp cypress.env.json.dist cypress.env.json команда для терминал
 ```
 npx cypress run 
 ```
-Ожидаемый результат: получим отчет о прохождении тестов.
-![image]()
+Ожидаемый результат: получим отчет о прохождении тестов. Последний тест должен упасть
+![image](https://raw.githubusercontent.com/AnnaLyapisova-QA/cypress.js/refs/heads/main/terminal.png)
 
 
 ## Локальный запуск через Cypress UI
 1. Скачать проект и открыть в терминале.
 2. Перейти в директорию проекта.
-3. В терминале в папке с проектом запустить npm `install --save-dev cypress@12.7.0`
-4. В терминале в папке с проектом запустить npm `npm i`
-5. В терминале в папке с проектом запустить npm `npx cypress open`
+3. В терминале в папке с проектом запустить `npm install --save-dev cypress@12.7.0`
+4. В терминале в папке с проектом запустить `npm i`
+5. В терминале в папке с проектом запустить `npx cypress open`
 6. Выбрать в Cypress UI E2E тестирование и браузер Google Chrome
 7. Выбрать спеку registration
 
 Ожидаемый результат: получим отчет о прохождении тестов. Последний тест должен упасть.
-![image]()
+![image](https://raw.githubusercontent.com/AnnaLyapisova-QA/cypress.js/refs/heads/main/testing.png)
